@@ -17,4 +17,5 @@ Username and password can be found in the website.
 
 # Thoughts
 Hard coded a lot - error
+
 Code got messy due to not planning ahead -error
