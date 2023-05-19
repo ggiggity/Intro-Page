@@ -9,7 +9,7 @@ npm install
 ```
 
 # Features
-You can click and drag most of the components, to open new component please double click the icons.
+You can click and drag most of the components, please double-click the icons.
 
 Second video from the Media Player include inappropriate words, please skip to next video if you're uncomfortable with that.
 
