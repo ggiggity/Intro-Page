@@ -43,10 +43,11 @@ const MySkills = ({ handleClick, change }) => {
                 onClick={() =>
                   change(
                     matrix,
-                    "https://upload.wikimedia.org/wikipedia/commons/a/a0/Digital_rain_animation_small_letters_shine.gif"
+                    "https://upload.wikimedia.org/wikipedia/commons/a/a0/Digital_rain_animation_small_letters_shine.gif",
+                    "neo.gif"
                   )
                 }
-                onMouseOver={() => setmsg("Go down Rabbit hole")}
+                onMouseOver={() => setmsg("Go down the Rabbit hole")}
                 className="relative cursor-pointer z-10 top-[10rem] hover:scale-150 transition ease-in-out delay-0"
                 src="/red.png"
                 width={150}
@@ -61,7 +62,9 @@ const MySkills = ({ handleClick, change }) => {
                 onClick={() =>
                   change(
                     modern,
-                    "https://thumbs.dreamstime.com/b/system-failure-text-digital-data-code-matrix-camera-moving-back-extreme-close-up-monitor-screen-showing-41945913.jpg"
+
+                    "https://thumbs.dreamstime.com/b/system-failure-text-digital-data-code-matrix-camera-moving-back-extreme-close-up-monitor-screen-showing-41945913.jpg",
+                    "agentsmith.gif"
                   )
                 }
                 onMouseOver={() => setmsg("Wake Up in your Bed")}

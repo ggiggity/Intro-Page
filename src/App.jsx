@@ -39,11 +39,13 @@ const GlobalStyles = createGlobalStyle`
 
 function App() {
   const [color, setcolor] = useState(rainyDay);
-  const change = (c, b) => {
+  const [image, setimg] = useState("family.gif");
+  const change = (c, b, i) => {
     const matrixbg = document.getElementById("bod");
     matrixbg.style.background = `url(${b})`;
     matrixbg.style.backgroundSize = "cover";
     setcolor(c);
+    setimg(i);
   };
   return (
     <div>
@@ -51,7 +53,11 @@ function App() {
       <ThemeProvider theme={color}>
         <Routes>
           <Route path="/" element={<Start />} />
-          <Route exact path="/home" element={<Home change={change} />} />
+          <Route
+            exact
+            path="/home"
+            element={<Home change={change} image={image} />}
+          />
           <Route exact path="/meme" element={<Meme />} />
         </Routes>
         <Menu />
