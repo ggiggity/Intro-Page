@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  font-weight: bold;
+  font-weight: 400;
+  font-family: "ms_sans_serif";
+}
+#vid {
+  font-size: x-small;
+}
+
+#vidbutton {
+  width: 20px;
+  height: 20px;
+  left: 978px;
+}
+
+#caption {
+  width: 80px;
+}
+
+@media all and (max-width: 500px) {
+  * {
+  }
+}
