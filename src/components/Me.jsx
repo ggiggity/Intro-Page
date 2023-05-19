@@ -20,7 +20,7 @@ const options2 = [
   { value: 4, label: "10.04.1991" },
 ];
 const options3 = [
-  { value: 0, label: "My Hero Academia" },
+  { value: 0, label: "Hogwart" },
   { value: 1, label: "Fullstack Academy " },
   { value: 2, label: "Monsters University " },
   { value: 3, label: "Springfield High School" },
