@@ -21,7 +21,7 @@ const Privacy = () => {
     setopen(false);
   };
   const handleLock = () => {
-    if (info.username === "giggity" && info.password === "8008135")
+    if (info.username === "giggity" && info.password === "52528282")
       setopen("opened"), confetti();
     else alert("please try again");
   };

@@ -56,7 +56,7 @@ const Info = ({ click }) => {
                     to={"https://github.com/team-thyme-fsa/grace-shopper"}
                     target="blank"
                   >
-                    <span className=" bg-black px-[4.2rem]">PokeMart</span>
+                    <span className="  px-[4.2rem]">PokeMart</span>
 
                     <div className=" w-[200px]  text-center h-[150px]">
                       <img src="https://github.com/team-thyme-fsa/grace-shopper/blob/main/graceshopper_wireframe_layout_documents/SINGLE%20PRODUCT%20VIEW.png?raw=true"></img>

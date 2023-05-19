@@ -40,6 +40,7 @@ const Me = () => {
   const [edu, setEdu] = useState(null);
   const [title, setTitle] = useState(null);
   const [msg, setMsg] = useState("");
+  const handleState = () => {};
 
   const handleClick = () => {
     if (name == 3 && dob == 4 && edu == 1 && title == 2)

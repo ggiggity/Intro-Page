@@ -15,7 +15,7 @@ const Home = ({ change }) => {
       <Profile />
       <WinPlayer />
       <img
-        onClick={() => alert("password = 8008135")}
+        onClick={() => alert("password: 52528282")}
         className="absolute left-[87rem] cursor-pointer -bottom-8"
         src="/clippy.gif"
       ></img>
