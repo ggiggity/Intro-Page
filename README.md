@@ -11,7 +11,5 @@ npm install
 # Features
 You can click and drag most of the components, please double-click the icons.
 
-Second video from the Media Player include inappropriate words, please skip to the next video if you're uncomfortable with that.
-
 Username and password can be found in the website.
 
