@@ -18,8 +18,8 @@ const Home = ({ change, image }) => {
       <Profile />
       <WinPlayer />
       <img
-        onClick={() => alert("password: 52528282")}
-        className="absolute left-[87rem] cursor-pointer -bottom-8"
+        onClick={() => alert("52528282")}
+        className="absolute left-[87rem] cursor-pointer -bottom-20"
         src="/clippy.gif"
       ></img>
       <Monitor
@@ -34,14 +34,14 @@ const Home = ({ change, image }) => {
           <img
             src="/phone1.png"
             width={80}
-            className="absolute left-[50rem]  cursor-pointer top-[50%]"
+            className="absolute z-1 left-[50rem]  cursor-pointer top-[50%]"
             onClick={() => {
               char === "" ? setchar("neo1.png") : setchar("");
             }}
           ></img>
           <img
             src={char}
-            className="absolute -bottom-3 left-20 cursor-pointer"
+            className="absolute -bottom-3 left-[30rem] cursor-pointer"
             onClick={() =>
               char === "neo1.png"
                 ? setchar("double.png")
@@ -57,7 +57,7 @@ const Home = ({ change, image }) => {
           <img
             src="/phone1.png"
             width={80}
-            className="absolute left-[50rem] cursor-pointer top-[20rem]"
+            className="absolute z-0 left-[50rem] cursor-pointer top-[20rem]"
             onClick={() => {
               char === "" ? setchar("agent.png") : setchar("");
             }}
@@ -65,7 +65,7 @@ const Home = ({ change, image }) => {
           <img
             src={char}
             width={150}
-            className="absolute -bottom-3 left-20 cursor-pointer"
+            className="absolute -bottom-3 left-[30rem] cursor-pointer"
           ></img>
         </div>
       )}

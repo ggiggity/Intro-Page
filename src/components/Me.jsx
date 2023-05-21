@@ -16,7 +16,7 @@ const options2 = [
   { value: 0, label: "10,000 BC" },
   { value: 1, label: "Yesterday" },
   { value: 2, label: "4.20.2022" },
-  { value: 3, label: "2.30.1995" },
+  { value: 3, label: "2.30.2005" },
   { value: 4, label: "10.04.1991" },
 ];
 const options3 = [
@@ -24,14 +24,14 @@ const options3 = [
   { value: 1, label: "Fullstack Academy " },
   { value: 2, label: "Monsters University " },
   { value: 3, label: "Springfield High School" },
-  { value: 4, label: "Assassination classroom" },
+  { value: 4, label: "Xavier's School For Gifted Youngsters" },
 ];
 const options4 = [
   { value: 0, label: "Ninja" },
   { value: 1, label: "Potato" },
   { value: 2, label: "Fullstack Engineer" },
-  { value: 3, label: "Witcher" },
-  { value: 4, label: "Fullmetal alchemist" },
+  { value: 3, label: "Fullmetal alchemist" },
+  { value: 4, label: "Wizard" },
 ];
 
 const Me = () => {
@@ -40,11 +40,10 @@ const Me = () => {
   const [edu, setEdu] = useState(null);
   const [title, setTitle] = useState(null);
   const [msg, setMsg] = useState("");
-  const handleState = () => {};
 
   const handleClick = () => {
     if (name == 3 && dob == 4 && edu == 1 && title == 2)
-      confetti(), setMsg("id = giggity");
+      confetti(), setMsg("username = giggity");
     else setMsg("Please Try again");
   };
   return (
