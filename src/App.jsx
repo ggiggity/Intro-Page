@@ -60,7 +60,6 @@ function App() {
           />
           <Route exact path="/meme" element={<Meme />} />
         </Routes>
-        <Menu />
       </ThemeProvider>
     </div>
   );

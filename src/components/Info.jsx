@@ -38,11 +38,34 @@ const Info = ({ click }) => {
           <WindowContent>
             <Tabs value={activeTab} onChange={handleChange}>
               <Tab value={0}>Profile</Tab>
+              <Tab value={3}>About</Tab>
               <Tab value={1}>Skills</Tab>
               <Tab value={2}>Projects</Tab>
             </Tabs>
             <TabBody style={{ height: 400 }}>
               {activeTab === 1 && <Skills></Skills>}
+              {activeTab === 3 && (
+                <div className="text-xl">
+                  <span>
+                    Hi, my name is Kevin, I'm originally from South Korea, spent
+                    my childhood there, and moved to NY when I was 13.
+                    <br></br>
+                    <br></br>
+                    My work life started at a young age. By working in many
+                    different industries and meeting a lot of people. I was able
+                    to experience various situations and learn how to
+                    communicate / teamwork, and workflow.
+                    <br></br>
+                    <br></br>
+                    The reason I joined the tech industry was because of it's
+                    work-life. For a person who always enjoyed building model
+                    kits, solving problems / riddles / puzzles, coding became my
+                    passion,and I liked the part that I can do that as a team.
+                    I'm excited to start my whole new career as a full stack
+                    role, and be part of the team.
+                  </span>
+                </div>
+              )}
 
               {activeTab === 0 && (
                 <div className="flex justify-between">

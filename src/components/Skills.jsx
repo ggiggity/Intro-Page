@@ -14,6 +14,10 @@ const skill = [
     img: "/jas.png",
   },
   {
+    name: "Node.js",
+    img: "/node.webp",
+  },
+  {
     name: "React",
     img: "/react.png",
   },

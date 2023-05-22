@@ -40,7 +40,7 @@ const WinPlayer = () => {
   };
 
   return (
-    <div className="z-20">
+    <div className="">
       <Draggable>
         <div className="w-[80px] m-5" onDoubleClick={() => setopen(true)}>
           <figure

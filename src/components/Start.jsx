@@ -10,7 +10,7 @@ const Start = () => {
     }, 3200);
   });
   return (
-    <div className="bg-[url('/energy.gif')] h-screen w-full bg-cover"></div>
+    <div className="z-10 bg-[url('/energy.gif')] h-screen w-full bg-cover"></div>
   );
 };
 

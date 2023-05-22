@@ -3,13 +3,12 @@ import React from "react";
 import MyComp from "./MyComp";
 import WinPlayer from "./WinPlayer";
 import { Monitor } from "react95";
-
+import Menu from "./Menu";
 import Profile from "./Profile";
 import Privacy from "./Privacy";
 import { useState } from "react";
 
 const Home = ({ change, image }) => {
-  const audio = new Audio("https://www.youtube.com/watch?v=YUdjiGbNkA8");
   const [char, setchar] = useState("");
   return (
     <div className="flex flex-col justify-start fixed">
@@ -69,6 +68,7 @@ const Home = ({ change, image }) => {
           ></img>
         </div>
       )}
+      <Menu />
     </div>
   );
 };
