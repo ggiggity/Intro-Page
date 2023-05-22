@@ -26,14 +26,14 @@ const Home = ({ change, image }) => {
           backgroundImage: `url(/${image})`,
           backgroundSize: "cover",
         }}
-        className="w-[200px] relative left-[90rem] bottom-[450px]"
+        className="w-[200px] relative left-[90rem] bottom-[30rem]"
       />
       {image === "neo.gif" && (
         <div>
           <img
             src="/phone1.png"
             width={80}
-            className="absolute z-1 left-[50rem]  cursor-pointer top-[50%]"
+            className="absolute left-[50rem] -z-20  cursor-pointer top-[50%]"
             onClick={() => {
               char === "" ? setchar("neo1.png") : setchar("");
             }}
@@ -56,7 +56,7 @@ const Home = ({ change, image }) => {
           <img
             src="/phone1.png"
             width={80}
-            className="absolute z-0 left-[50rem] cursor-pointer top-[20rem]"
+            className="absolute -z-10 left-[50rem] cursor-pointer top-[20rem]"
             onClick={() => {
               char === "" ? setchar("agent.png") : setchar("");
             }}
@@ -68,7 +68,7 @@ const Home = ({ change, image }) => {
           ></img>
         </div>
       )}
-      <Menu />
+      <Menu className="z-0" />
     </div>
   );
 };

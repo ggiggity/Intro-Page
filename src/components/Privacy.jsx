@@ -63,7 +63,7 @@ const Privacy = () => {
         <Meme handleClick={handleClick} />
       ) : (
         open === "locked" && (
-          <div className="flex top-20 left-[20rem] z-10 absolute justify-center items-center">
+          <div className="flex top-20 left-[35rem] z-10 absolute justify-center items-center">
             <Window shadow={true} className="flex w-[30rem]">
               <WindowHeader className="flex flex-wrap items-center justify-between handle">
                 <span>Go away</span>

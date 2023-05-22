@@ -23,7 +23,7 @@ const Info = ({ click }) => {
   const { activeTab } = state;
   return (
     <Draggable>
-      <div className="absolute z-10 top-20 left-[30rem]">
+      <div className="absolute top-20 left-[30rem]">
         <Window style={{ width: 800, height: 500 }}>
           <WindowHeader>
             Kevin Hyun An

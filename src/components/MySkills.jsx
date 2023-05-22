@@ -2,7 +2,6 @@ import React from "react";
 import { useState, useEffect } from "react";
 import Draggable, { DraggableCore } from "react-draggable";
 import { Button, Window, WindowContent, WindowHeader } from "react95";
-import Icons from "./Icons";
 import matrix from "react95/dist/themes/matrix";
 import modern from "react95/dist/themes/modernDark";
 

@@ -40,7 +40,7 @@ const WinPlayer = () => {
   };
 
   return (
-    <div className="">
+    <div className="  ">
       <Draggable>
         <div className="w-[80px] m-5" onDoubleClick={() => setopen(true)}>
           <figure
@@ -64,103 +64,104 @@ const WinPlayer = () => {
         </div>
       </Draggable>
       {open && (
-        <div
-          className="absolute top-[5%] -z-30 left-[20rem]"
-          style={{ width: 1000 }}
-        >
-          <Window className="">
-            <WindowHeader>
-              <span>Window95 Media Player (playing)</span>
-              <div className="" onClick={() => setopen(false)}>
-                <Button
-                  style={{ height: "23px", width: "23px" }}
-                  className="font-bold left-[97%] -top-[35px]"
-                >
-                  x
+        <Draggable>
+          <div
+            className="absolute top-[5%] z-10 left-[20rem]"
+            style={{ width: 1000 }}
+          >
+            <Window className="">
+              <WindowHeader>
+                <span>Window95 Media Player (playing)</span>
+                <div className="" onClick={() => setopen(false)}>
+                  <Button
+                    style={{ height: "23px", width: "23px" }}
+                    className="font-bold left-[97%] -top-[35px]"
+                  >
+                    x
+                  </Button>
+                </div>
+              </WindowHeader>
+              <Toolbar>
+                <Button variant="thin" disabled>
+                  File
                 </Button>
-              </div>
-            </WindowHeader>
-            <Toolbar>
-              <Button variant="thin" disabled>
-                File
-              </Button>
-              <Button variant="thin" disabled>
-                Edit
-              </Button>
-              <Button disabled variant="thin">
-                Help
-              </Button>
-            </Toolbar>
-            <WindowContent className="px-5 pt-10 pb-[100px] bg-[#C6C6C6]">
-              {/* <ScrollView> */}
-              <video
-                ref={videoRef}
-                id="video1"
-                width="900"
-                src={list[current]}
-                onEnded={() => setcurrent(current + 1)}
-                style={{
-                  marginBottom: 4,
-                }}
-                className="px-20 bg-black "
-              />
-              {/* </ScrollView> */}
-            </WindowContent>
-            <Separator></Separator>
-            <div className="pb-[80px] flex">
-              {/* <Slider
+                <Button variant="thin" disabled>
+                  Edit
+                </Button>
+                <Button disabled variant="thin">
+                  Help
+                </Button>
+              </Toolbar>
+              <WindowContent className="px-5 pt-10 pb-[100px] bg-[#C6C6C6]">
+                <video
+                  ref={videoRef}
+                  id="video1"
+                  width="900"
+                  src={list[current]}
+                  onEnded={() => setcurrent(current + 1)}
+                  style={{
+                    marginBottom: 4,
+                  }}
+                  className="px-20 bg-black "
+                />
+                {/* </ScrollView> */}
+              </WindowContent>
+              <Separator></Separator>
+              <div className="pb-[80px] flex">
+                {/* <Slider
                 value={progress}
                 size="50%"
                 className="absolute left-[30%] top-7 "
                 step={1}
               /> */}
-              <p className="relative bg-black mt-2 text-white w-[20rem] top-8 left-[18rem] h-20 text-center text-5xl pt-4">
-                {Math.floor(currentTime / 60) +
-                  ":" +
-                  ("0" + Math.floor(currentTime % 60)).slice(-2)}
-              </p>
+                <p className="relative bg-black mt-2 text-white w-[20rem] top-8 left-[18rem] h-20 text-center text-5xl pt-4">
+                  {Math.floor(currentTime / 60) +
+                    ":" +
+                    ("0" + Math.floor(currentTime % 60)).slice(-2)}
+                </p>
 
-              <div className="absolute flex-wrap w-[13rem] bottom-[3rem] left-[2rem] flex gap-2">
-                <Button
-                  style={{ fontSize: "", width: 92, height: 40 }}
-                  onClick={() => playVideo("play")}
-                >
-                  ▶
-                </Button>
-                <Button
-                  style={{ fontSize: "2xlarge", width: 92, height: 40 }}
-                  onClick={() => playVideo("pause")}
-                >
-                  ⏸
-                </Button>{" "}
-                <Button
-                  style={{ fontSize: "", width: 42, height: 40 }}
-                  onClick={() => setcurrent(current - 1)}
-                >
-                  ⏮{" "}
-                </Button>
-                <Button
-                  style={{ fontSize: "", width: 42, height: 40 }}
-                  onClick={() => (videoRef.current.currentTime -= 5)}
-                >
-                  ⏪{" "}
-                </Button>
-                <Button
-                  style={{ fontSize: "", width: 42, height: 40 }}
-                  onClick={() => (videoRef.current.currentTime += 5)}
-                >
-                  ⏩{" "}
-                </Button>
-                <Button
-                  style={{ fontSize: "", width: 42, height: 40 }}
-                  onClick={() => setcurrent(current + 1)}
-                >
-                  ⏭
-                </Button>
+                <div className="absolute flex-wrap w-[13rem] bottom-[3rem] left-[2rem] flex gap-2">
+                  <Button
+                    style={{ fontSize: "", width: 92, height: 40 }}
+                    onClick={() => playVideo("play")}
+                  >
+                    ▶
+                  </Button>
+                  <Button
+                    style={{ fontSize: "2xlarge", width: 92, height: 40 }}
+                    onClick={() => playVideo("pause")}
+                  >
+                    ⏸
+                  </Button>{" "}
+                  <Button
+                    style={{ fontSize: "", width: 42, height: 40 }}
+                    onClick={() => setcurrent(current - 1)}
+                  >
+                    ⏮{" "}
+                  </Button>
+                  <Button
+                    style={{ fontSize: "", width: 42, height: 40 }}
+                    onClick={() => (videoRef.current.currentTime -= 5)}
+                  >
+                    ⏪{" "}
+                  </Button>
+                  <Button
+                    style={{ fontSize: "", width: 42, height: 40 }}
+                    onClick={() => (videoRef.current.currentTime += 5)}
+                  >
+                    ⏩{" "}
+                  </Button>
+                  <Button
+                    style={{ fontSize: "", width: 42, height: 40 }}
+                    onClick={() => setcurrent(current + 1)}
+                  >
+                    ⏭
+                  </Button>
+                </div>
               </div>
-            </div>
-          </Window>
-        </div>
+            </Window>
+          </div>
+        </Draggable>
       )}
     </div>
   );
