@@ -49,7 +49,7 @@ const WinPlayer = () => {
               select ? setselected(false) : setselected(true);
             }}
           >
-            <div className="z-20 absolute w-20 h-[100px]"></div>
+            <div className=" absolute w-20 h-[100px]"></div>
             <Mplayer10 className="relative left-4 w-11"></Mplayer10>
             <figcaption
               className={
@@ -66,7 +66,7 @@ const WinPlayer = () => {
       {open && (
         <Draggable>
           <div
-            className="absolute top-[5%] z-10 left-[20rem]"
+            className="absolute top-[5%] left-[20rem]"
             style={{ width: 1000 }}
           >
             <Window className="">
