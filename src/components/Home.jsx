@@ -68,7 +68,7 @@ const Home = ({ change, image }) => {
           ></img>
         </div>
       )}
-      <Menu className="z-0" />
+      <Menu />
     </div>
   );
 };

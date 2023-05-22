@@ -58,7 +58,6 @@ function App() {
             path="/home"
             element={<Home change={change} image={image} />}
           />
-          <Route exact path="/meme" element={<Meme />} />
         </Routes>
       </ThemeProvider>
     </div>
