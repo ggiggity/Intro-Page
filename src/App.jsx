@@ -53,7 +53,7 @@ function App() {
       <GlobalStyles />
       <ThemeProvider theme={color}>
         <Routes>
-          <Route exact path="*" element={<NotFound />} />
+          <Route path="*" element={<NotFound />} />
           <Route exact path="/" element={<Start />} />
           <Route
             exact
