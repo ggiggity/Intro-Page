@@ -15,6 +15,7 @@ import Meme from "./components/Meme";
 import ms_sans_serif from "react95/dist/fonts/ms_sans_serif.woff2";
 import ms_sans_serif_bold from "react95/dist/fonts/ms_sans_serif_bold.woff2";
 import { useState } from "react";
+import NotFound from "./components/NotFound";
 
 const GlobalStyles = createGlobalStyle`
   ${styleReset}
@@ -52,6 +53,7 @@ function App() {
       <GlobalStyles />
       <ThemeProvider theme={color}>
         <Routes>
+          <Route path="*" element={<NotFound />} />
           <Route path="/" element={<Start />} />
           <Route
             exact

@@ -5,7 +5,7 @@ import { Button, Window, WindowContent, WindowHeader } from "react95";
 import matrix from "react95/dist/themes/matrix";
 import modern from "react95/dist/themes/modernDark";
 
-const MySkills = ({ handleClick, change }) => {
+const Theme = ({ handleClick, change }) => {
   const [msg, setmsg] = useState("");
   return (
     <div className="">
@@ -20,7 +20,7 @@ const MySkills = ({ handleClick, change }) => {
           <WindowHeader
             active={false}
             className="window-title"
-            style={{ backgroundColor: "black" }}
+            style={{ backgroundColor: "#37FE69", color: "black" }}
           >
             <span>My Computer</span>
             <div className="" onClick={() => handleClick(false)}>
@@ -80,4 +80,4 @@ const MySkills = ({ handleClick, change }) => {
   );
 };
 
-export default MySkills;
+export default Theme;

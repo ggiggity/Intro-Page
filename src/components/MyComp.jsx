@@ -4,7 +4,7 @@ import Draggable, { DraggableCore } from "react-draggable";
 import { Computer4 } from "@react95/icons";
 /* Pick a theme of your choice */
 
-import MySkills from "./MySkills";
+import Theme from "./Theme";
 
 const MyComp = ({ change }) => {
   const [select, setselected] = useState(null);
@@ -28,8 +28,8 @@ const MyComp = ({ change }) => {
             <figcaption
               className={
                 select
-                  ? ` w-20 text-center bg-icon border-2 border-dotted`
-                  : `transparent text-center mt-[2px]`
+                  ? ` w-20 text-center bg-[#37FE69] text-white border-2 border-dotted`
+                  : `transparent text-center mt-[2px] text-white`
               }
             >
               My Computer
@@ -37,7 +37,7 @@ const MyComp = ({ change }) => {
           </figure>
         </div>
       </Draggable>
-      {open && <MySkills change={change} handleClick={handleClick} />}
+      {open && <Theme change={change} handleClick={handleClick} />}
     </>
   );
 };
